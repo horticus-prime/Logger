@@ -1,2 +1,2 @@
-# front-end
-The front end part of the project
+# Logger
+Logs errors, server connections, database interactions, soil data
