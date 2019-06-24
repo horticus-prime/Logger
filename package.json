@@ -1,0 +1,37 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Logs errors, server connections, database interactions, soil data",
+  "main": "logger.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node logger.js",
+    "lint": "eslint \"**/*.js\"",
+    "test-watch": "jest --watchAll",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horticus-prime/Logger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horticus-prime/Logger/issues"
+  },
+  "homepage": "https://github.com/horticus-prime/Logger#readme",
+  "dependencies": {
+    "eslint": "^6.0.0",
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.15",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
+    "jsdocs": "^1.0.0",
+    "mongoose": "^5.6.1",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "superagent": "^5.1.0"
+  }
+}
