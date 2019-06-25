@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv').config();
+
 // Setup socket.io-client
 const io = require('socket.io-client');
 
