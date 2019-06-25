@@ -4,7 +4,7 @@
 const io = require('socket.io-client');
 
 // connect to server.js
-const socket = io.connect('http://localhost:3005');
+const socket = io.connect(process.env.SOCKET);
 
 let moistureSensor = (message) => {
   console.log(message);

@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/horticus-prime/Logger#readme",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "eslint": "^6.0.0",
     "express-swagger-generator": "^1.1.15",
     "jest": "^24.8.0",
