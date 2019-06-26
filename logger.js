@@ -8,6 +8,8 @@ const io = require('socket.io-client');
 // connect to server.js
 const socket = io.connect(process.env.SOCKET);
 
+console.log(socket);
+
 let moistureSensor = (message) => {
   console.log(message);
 };
