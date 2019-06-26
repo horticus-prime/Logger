@@ -18,6 +18,7 @@ const socket = io.connect(process.env.SOCKET);
  * 
  * @param {string} message - console logs message from the moisture sensor
  */
+
 let moistureSensor = (message) => {
   console.log(message);
 };
