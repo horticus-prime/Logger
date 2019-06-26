@@ -22,20 +22,3 @@ describe('hello World', () => {
     expect(logger.helloWorld).toBe(undefined);
   });
 });
-
-let reqData = (message) => {
-  console.log(message);
-};
-
-describe('req Data', () => {
-  it('test req Data', () => {
-    let data = 'Hello';
-    expect(reqData(data)).toBe(console.log('Hello'));
-  })
-})
-
-// describe('Hello World Function', () => {
-//   it('should return Hello World', () => {
-//     expect(helloWorld()).toBe('Hello World!');
-//   })
-// })
