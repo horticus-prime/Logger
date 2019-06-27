@@ -2,8 +2,9 @@
 
 require('dotenv').config();
 
-const app = express();
 const express = require('express');
+const app = express();
+
 app.use(express.static('docs'));
 
 const io = require('socket.io-client');
