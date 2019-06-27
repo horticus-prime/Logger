@@ -22,7 +22,6 @@ socket.on('connect', () => {
  * 
  * @param {string} message - console logs message from the moisture sensor
  */
-
 let moistureSensor = (message) => {
   console.log(message);
 };
@@ -35,14 +34,9 @@ let reqData = (message) => {
   console.log(message);
 };
 
-/**
- * @param {string} message - returns 'Hello World!' as a test of functionality
- */
-let helloWorld = () => {
-  return 'Hello World!';
+let saveInfo = (info) => {
+  console.log(info);
 };
-
-console.log(helloWorld());
 
 /**
  * @param {string} moisture-data - listens for file-save event from moistureSensor
@@ -52,3 +46,4 @@ console.log(helloWorld());
 
 socket.on('moisture-data', moistureSensor);
 socket.on('req-data', reqData);
+socket.on('save-status', saveInfo);
