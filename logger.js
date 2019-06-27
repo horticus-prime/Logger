@@ -2,8 +2,9 @@
 
 require('dotenv').config();
 
-const app = express();
 const express = require('express');
+const app = express();
+
 app.use(express.static('docs'));
 
 const io = require('socket.io-client');
@@ -13,10 +14,6 @@ const io = require('socket.io-client');
  */
 
 const socket = io.connect(process.env.SOCKET);
-
-socket.on('connect', () => {
-  console.log('Connected!');
-});
 
 /**
  * 
@@ -34,6 +31,10 @@ let reqData = (message) => {
   console.log(message);
 };
 
+/**
+ * 
+ * @param {string} message - console logs message from save-status
+ */
 let saveInfo = (info) => {
   console.log(info);
 };
