@@ -53,3 +53,6 @@ console.log(helloWorld());
 
 socket.on('moisture-data', moistureSensor);
 socket.on('req-data', reqData);
+
+module.exports =  reqData, moistureSensor, helloWorld;
+
