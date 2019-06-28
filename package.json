@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node logger.js",
-    "lint": "eslint \"**/*.js\"",
+    "lint": "eslint --fix \"**/*.js\"",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json .",
     "test-watch": "jest --watchAll",
     "test": "jest --verbose --coverage"
   },
@@ -23,7 +24,9 @@
   },
   "homepage": "https://github.com/horticus-prime/Logger#readme",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "eslint": "^6.0.0",
+    "express": "^4.17.1",
     "express-swagger-generator": "^1.1.15",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.2",
