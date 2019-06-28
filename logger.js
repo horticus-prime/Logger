@@ -47,4 +47,7 @@ let saveInfo = (info) => {
 
 socket.on('moisture-data', moistureSensor);
 socket.on('req-data', reqData);
+
 socket.on('save-status', saveInfo);
+
+module.exports =  reqData, moistureSensor, helloWorld;
