@@ -15,15 +15,10 @@ const io = require('socket.io-client');
 
 const socket = io.connect(process.env.SOCKET);
 
-socket.on('connect', () => {
-  console.log('Connected!');
-});
-
 /**
  * 
  * @param {string} message - console logs message from the moisture sensor
  */
-
 let moistureSensor = (message) => {
   console.log(message);
 };
@@ -37,13 +32,12 @@ let reqData = (message) => {
 };
 
 /**
- * @param {string} message - returns 'Hello World!' as a test of functionality
+ * 
+ * @param {string} message - console logs message from save-status
  */
-let helloWorld = () => {
-  return 'Hello World!';
+let saveInfo = (info) => {
+  console.log(info);
 };
-
-console.log(helloWorld());
 
 /**
  * @param {string} moisture-data - listens for file-save event from moistureSensor
@@ -54,5 +48,6 @@ console.log(helloWorld());
 socket.on('moisture-data', moistureSensor);
 socket.on('req-data', reqData);
 
-module.exports =  reqData, moistureSensor, helloWorld;
+socket.on('save-status', saveInfo);
 
+module.exports =  reqData, moistureSensor, helloWorld;
