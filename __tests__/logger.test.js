@@ -15,10 +15,3 @@ describe('logger module', () => {
     spy.mockRestore();
   });
 });
-
-describe('hello World', () => {
-  it('test return', () => {
-    logger.helloWorld;
-    expect(logger.helloWorld).toBe(undefined);
-  });
-});

@@ -50,4 +50,4 @@ socket.on('req-data', reqData);
 
 socket.on('save-status', saveInfo);
 
-module.exports =  reqData, moistureSensor, helloWorld;
+module.exports =  reqData, moistureSensor;
